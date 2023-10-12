@@ -1,4 +1,3 @@
-Challenges
 
 Dispositivos:
 - ESP32 + dht11 funcionando y logueando data
