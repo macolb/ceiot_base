@@ -12,6 +12,6 @@ Mediciones:
 
 Usuarios:
 - Agregar roles a los usuarios
-- Creacion de web/measurement
+- Creacion de web/users
 - Acceso desde pag principal (Users as html)
 
