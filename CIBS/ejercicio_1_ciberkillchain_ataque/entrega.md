@@ -23,12 +23,14 @@ El sistema de autoservicio para dispensado de cerveza cuenta con:
 * Reconnaissance
   - Reconocer IP pública del sistema
   - Identificar vulnerabilidades (Broker o Webapp)
-
-* Weaponization
   - Ir a los bares para probar el sistema, como funciona y cuales son sus pasos
   - Que paso si reseteo las canillas y cuando prende tiene muchas peticiones? Tiene botón de reseteo a la vista? y el enchufe?
   - Qué métodos de pago tiene habilitado?
   - Tienen wifi libre? Dan su contraseña?
+
+* Weaponization
+  - Prepara un Front de la app de Mercado Pago
+  - Preparar un programa para interceptar paquetes de mensajes
 
 * Delivery
   - Puedo utilizar un QR pegado en la pantalla de la canilla para engañar a los usuarios y tomar el control de la pagina web mediante phishing para obtener las credenciales del método de pago
