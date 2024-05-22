@@ -18,7 +18,7 @@ El sistema de autoservicio para dispensado de cerveza cuenta con:
  * Obtener datos de la base simulando ser una canilla
  * Obtener credenciales de medios de pago
        
-Pasos para hacer el ataque
+## Pasos para hacer el ataque
 
 * Reconnaissance
   - Reconocer IP pública del sistema
