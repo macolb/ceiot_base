@@ -31,6 +31,7 @@ El sistema de autoservicio para dispensado de cerveza cuenta con:
 * Weaponization
   - Prepara un Front de la app de Mercado Pago
   - Preparar un programa para interceptar paquetes de mensajes
+  - Preparo una appweb con la misma interfaz que el sistema
 
 * Delivery
   - Puedo utilizar un QR pegado en la pantalla de la canilla para engañar a los usuarios y tomar el control de la pagina web mediante phishing para obtener las credenciales del método de pago
