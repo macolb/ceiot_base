@@ -26,9 +26,8 @@ El sistema de autoservicio para dispensado de cerveza cuenta con:
   - Tienen wifi propio? dan la contraseña?
   - Es un sistema interno o esta hosteado en algún lado?
  
-1. T1598.001 - Phishing for Information: Spearphishing Link: Enviar correos electrónicos con enlaces maliciosos para recolectar información sobre los sistemas y los usuarios.
+1. T1598.001 - Phishing for Information: Spearphishing Link: Enviar correos electrónicos con enlaces maliciosos para recolectar información sobre los sistemas y usuarios.
 2. T1592.004 - Gather Victim Host Information: Active Scanning: Escaneo activo para identificar sistemas vulnerables y configuraciones de red.
-3. T1596.002 - Search Open Websites/Domains: Search Open Technical Databases: Buscar en bases de datos técnicas abiertas para recolectar información sobre los sistemas.
 
 * Weaponization
   - Prepara un Front de la app de Mercado Pago.
@@ -61,7 +60,7 @@ El sistema de autoservicio para dispensado de cerveza cuenta con:
   - Obtengo las credenciales del método de pago del usuario (Ej. Hacer Log In a Mercado pago diciendo que solo es para la primera vez).
   - Obtengo los datos de la tarjeta del usuario.
  
-1. T1071.001 - Application Layer Protocol: Web Protocols: Comunicación de comando y control a través de protocolos web para exfiltrar credenciales.
+1. T1071.001 - Application Layer Protocol: Web Protocols: Comunicación de comando y control a través de protocolos web para filtrar credenciales.
 2. T1090.003 - Proxy: Multi-hop Proxy: Utilizar proxies múltiples para ocultar la ubicación del atacante.
   
 * Actions on Objectives
