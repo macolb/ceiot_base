@@ -10,7 +10,7 @@ El sistema de autoservicio para dispensado de cerveza cuenta con:
  * Un Firmware (canilla)
  * Una API (Back-end) que permite manejar los servicios como pagos, órdenes y autenticación de usuarios en una instancia de AWS
  * Una webapp hosteada para la interacción con el cliente y para generar los pedidos en una instancia de AWS
- * Una base de datos con los datos del sistema y los usuarios en buckets de AWS
+ * Una base de datos con los datos del sistema y los usuarios en buckets de AWS.
 
 ## Objetivo del ataque
 
@@ -21,6 +21,7 @@ El sistema de autoservicio para dispensado de cerveza cuenta con:
 * Reconnaissance
   - Identificar vulnerabilidades (Webapp).
   - Ir a los bares para probar el sistema, ver como funciona y cuales son sus pasos para generar una orden.
+  - Identifico medidas de seguridad.
   - Qué métodos de pago tiene habilitado?
   - Tienen wifi propio? dan la contraseña?
   - Es un sistema interno o esta hosteado en algún lado?
