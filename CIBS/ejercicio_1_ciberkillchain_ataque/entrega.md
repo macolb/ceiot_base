@@ -8,49 +8,47 @@ Alumno: Macol Burna
 
 El sistema de autoservicio para dispensado de cerveza cuenta con:
  * Un Firmware (canilla)
- * Una API (Back-end) que permite manejar los servicios como pagos, órdenes y autenticación
- * Una aplicación webapp para que el usuario genere el pedido
- * Una base de datos con los datos del sistema y los usuarios
+ * Una API (Back-end) que permite manejar los servicios como pagos, órdenes y autenticación de usuarios en una instancia de AWS
+ * Una webapp hosteada para la interacción con el cliente y para generar los pedidos en una instancia de AWS
+ * Una base de datos con los datos del sistema y los usuarios en buckets de AWS
 
 ## Objetivo del ataque
 
- * Obtener las credenciales de las canillas para dispensarme sin pagar
- * Obtener datos de la base simulando ser una canilla
- * Obtener credenciales de medios de pago
+ * Obtener credenciales de medios de pago del cliente y/o clonar información de tarjetas.
        
 ## Pasos para hacer el ataque
 
 * Reconnaissance
-  - Reconocer IP pública del sistema
-  - Identificar vulnerabilidades (Broker o Webapp)
-  - Ir a los bares para probar el sistema, como funciona y cuales son sus pasos
-  - Que paso si reseteo las canillas y cuando prende tiene muchas peticiones? Tiene botón de reseteo a la vista? y el enchufe?
+  - Identificar vulnerabilidades (Webapp).
+  - Ir a los bares para probar el sistema, ver como funciona y cuales son sus pasos para generar una orden.
   - Qué métodos de pago tiene habilitado?
-  - Tienen wifi libre? Dan su contraseña?
+  - Tienen wifi propio? dan la contraseña?
+  - Es un sistema interno o esta hosteado en algún lado?
 
 * Weaponization
-  - Prepara un Front de la app de Mercado Pago
-  - Preparar un programa para interceptar paquetes de mensajes
-  - Preparo una appweb con la misma interfaz que el sistema
+  - Prepara un Front de la app de Mercado Pago.
+  - Preparo una webapp con la misma interfaz del sistema para controlar las canillas.
 
 * Delivery
-  - Puedo utilizar un QR pegado en la pantalla de la canilla para engañar a los usuarios y tomar el control de la pagina web mediante phishing para obtener las credenciales del método de pago
-  - Puedo interceptar el mensaje de las canillas o de las órdenes que les generan para servir
+  - Puedo utilizar un QR pegado en la pantalla de la canilla para engañar a los usuarios.
+  - Si se genera el pedido a las canillas desde una página, puedo tener un host que se llame muy parecido ( .com en vez de .com.ar o que sea itapi.com en vez de itap.com).
+  - Puedo en la misma red hacer que los usuarios entren a mi página mediante una invitacion mediante phishing.
+  - Utilizar correos electrónicos de phishing para engañar.
 
 * Exploit
-  - Logro tomar control de las canillas
-  - Logro hacer que los usuarios entren a mi página clonada de pago
+  - Logro hacer que los usuarios entren a mi página clonada del control de canillas.
+  - Logro hacer que los usuarios entren a mi página clonada del método de pago (Mercado pago).
 
 * Installation
-  - Si obtengo las credenciales de las canillas puedo hacer que el server colapse de peticiones.
-  - Si logro simular una orden ya paga puedo hacer que las canillas dispensen sin pagar
+  - Simulo ser la página para controlar las canillas y que ingresen los datos de la tarjeta ahí.
+  - Simulo ser la página para controlar las canillas para redireccionarlos a mi página clonada de medio de pago (Mercado pago).
+  - Simulo ser la página de medio de pago.
 
 * Command & Control
-  - Obtengo las credenciales e informacion de los usuarios.
-  - Logro que las canillas dispensen sin pagar.
+  - Obtengo las credenciales del método de pago del usuario (Ej. Hacer Log In a Mercado pago diciendo que solo es para la primera vez).
+  - Obtengo los datos de la tarjeta del usuario.
   
 * Actions on Objectives
-  - Obtengo información de tarjetas para utilizarlas
-  - Logro que los clientes envíen sus pagos a mí cuenta y no a la del bar
-  - Me dispenso cervezar sin tener que pagar
+  - Obtengo información de tarjetas para utilizarlas.
+  - Obtengo las credenciales del método de pago del usuario para ingresar y pasarme dinero a otra cuenta.
 
