@@ -33,8 +33,8 @@ El sistema de autoservicio para dispensado de cerveza cuenta con:
 * Delivery
   - Puedo utilizar un QR pegado en la pantalla de la canilla para engañar a los usuarios.
   - Si se genera el pedido a las canillas desde una página, puedo tener un host que se llame muy parecido ( .com en vez de .com.ar o que sea itapi.com en vez de itap.com).
-  - Puedo en la misma red hacer que los usuarios entren a mi página mediante una invitacion mediante phishing.
-  - Utilizar correos electrónicos de phishing para engañar.
+  - Puedo en la misma red hacer que los usuarios entren a mi página mediante una invitacion mediante phishing. (T1204.001 - Malicius link)
+  - Utilizar correos electrónicos de phishing para engañar. (T1566.002 - Spearphishing Link)
 
 * Exploit
   - Logro hacer que los usuarios entren a mi página clonada del control de canillas.
