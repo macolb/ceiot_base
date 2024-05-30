@@ -21,9 +21,7 @@ El sistema de autoservicio para dispensado de cerveza cuenta con:
 * Reconnaissance
   - Identificar vulnerabilidades (Webapp).
   - Ir a los bares para probar el sistema, ver como funciona y cuales son sus pasos para generar una orden.
-  - Identifico medidas de seguridad.
   - Qué métodos de pago tiene habilitado?
-  - Tienen wifi propio? dan la contraseña?
   - Es un sistema interno o esta hosteado en algún lado?
  
        1. T1598.001 - Phishing for Information: Spearphishing Link: Enviar correos electrónicos con enlaces maliciosos para recolectar información sobre los sistemas y usuarios.
@@ -32,15 +30,16 @@ El sistema de autoservicio para dispensado de cerveza cuenta con:
 * Weaponization
   - Prepara un Front de la app de Mercado Pago.
   - Preparo una webapp con la misma interfaz del sistema para controlar las canillas.
+  - Preparar Stickers de QR simil menú del local.
  
        1. T1059.007 - Command and Scripting Interpreter: JavaScript: Crear scripts maliciosos en JavaScript para utilizar en la webapp clonada.
        2. T1608.003 - Stage Capabilities: Install Digital Certificate: Preparar certificados digitales falsos para que las páginas clonadas parezcan legítimas.
 
 * Delivery
   - Puedo utilizar un QR pegado en la pantalla de la canilla para engañar a los usuarios.
-  - Si se genera el pedido a las canillas desde una página, puedo tener un host que se llame muy parecido ( .com en vez de .com.ar o que sea itapi.com en vez de itap.com).
-  - Puedo en la misma red hacer que los usuarios entren a mi página mediante una invitacion mediante phishing.
-  - Utilizar correos electrónicos de phishing para engañar.
+  - Puedo usar los QRs del tipo menú para que los usuarios ingresen a mi página clonada.
+  - inhibir Wifi y generar Access Point para "ingresen" al Wifi.
+  - Página cautiva y pedir autenticación.
  
        1. T1204.001 - User Execution: Malicious Link: Utilizar enlaces maliciosos en QR codes, correos electrónicos de phishing o redes WiFi comprometidas.
        2. T1566.002 - Phishing: Spearphishing Link: Enviar correos electrónicos específicos a los usuarios para que accedan a páginas clonadas.
