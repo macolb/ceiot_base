@@ -38,7 +38,7 @@ El sistema de autoservicio para dispensado de cerveza cuenta con:
 * Delivery
   - Puedo utilizar un QR pegado en la pantalla de la canilla para engañar a los usuarios.
   - Puedo usar los QRs del tipo menú para que los usuarios ingresen a mi página clonada.
-  - inhibir Wifi y generar Access Point para "ingresen" al Wifi.
+  - inhibir Wifi y generar Access Point.
   - Página cautiva y pedir autenticación.
  
        1. T1204.001 - User Execution: Malicious Link: Utilizar enlaces maliciosos en QR codes, correos electrónicos de phishing o redes WiFi comprometidas.
