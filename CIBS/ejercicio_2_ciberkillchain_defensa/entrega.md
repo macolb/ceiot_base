@@ -19,15 +19,44 @@ Desarrollar la defensa en función del ataque planteado en orden inverso. No es 
 
 * Actions on Objectives
 
+Defensa: Monitoreo de anomalías en Transacciones
+Implementación: Utilizar un sistema de detección de fraudes basado en inteligencia artificial y machine learning que pueda identificar patrones inusuales en las transacciones financieras.
+Configurar alertas para transacciones que excedan ciertos límites o se realicen en ubicaciones geográficas atípicas.
+
 * Command & Control
+
+Defensa: Análisis de Tráfico de Red
+Implementación: Emplear herramientas de monitoreo de red que inspeccionen el tráfico saliente en busca de patrones de comunicación sospechosos o inusuales.
+Configurar reglas específicas para detectar conexiones salientes a dominios o IPs no reconocidos o poco confiables.
 
 * Installation
 
+Defensa: Filtrado de URLs y DNS
+Implementación: Utilizar un sistema de filtrado de URLs y DNS que bloquee el acceso a sitios web maliciosos o sospechosos.
+Mantener listas negras actualizadas de dominios conocidos por phishing y ataques similares, y configurar políticas estrictas de navegación segura.
+
 * Exploit
+
+Defensa: Autenticación Multifactor (MFA)
+Implementación: Requerir autenticación multifactor para el acceso a todos los sistemas críticos, incluyendo la webapp y la plataforma de pagos.
+Implementar autenticación (certificados/dos pasos) al menos para las operaciones sensibles y accesos administrativos.
 
 * Delivery
 
+Defensa: Protección contra Phishing
+Implementación: Desplegar soluciones anti-phishing que analicen y bloqueen correos electrónicos maliciosos antes de que lleguen a los usuarios.
+Utilizar una combinación de servicios de filtrado de correo y entrenamiento de concientización de seguridad para los empleados y usuarios.
+
 * Weaponization
 
+Defensa: Validación de Certificados y Aplicaciones
+Implementación: Asegurar que todas las aplicaciones y servicios web usen certificados SSL/TLS válidos y estén registrados correctamente.
+Realizar auditorías periódicas de los certificados utilizados y asegurar que solo aplicaciones y APIs legítimas puedan interactuar con el sistema.
+
 * Reconnaissance
+
+Defensa: Análisis de Vulnerabilidades y Penetración Regular
+Implementación: Ejecutar análisis de vulnerabilidades y pruebas de penetración de manera regular para identificar posibles debilidades en el sistema antes de que los atacantes las exploten.
+Utilizar herramientas automatizadas de escaneo de vulnerabilidades y complementar con pruebas manuales en áreas críticas.
+
 
