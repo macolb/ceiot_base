@@ -14,21 +14,19 @@ El sistema de autoservicio para dispensado de cerveza cuenta con:
 
 ## Objetivo del ataque
 
- * Obtener credenciales de medios de pago del cliente y/o clonar información de tarjetas.
-
-(Obtener transferencias de pagos de los clientes al no saber el funcionamiento del sistema)
+ * Obtener transferencias de pagos de los clientes al no saber el funcionamiento del sistema.
        
 ## Pasos para hacer el ataque
 
 * Reconnaissance
-  - Identificar vulnerabilidades (Webapp).
+  - Ver la interfaz de la WebApp para clonarla.
   - Ir a los bares para probar el sistema, ver como funciona y cuales son sus pasos para generar una orden.
   - Qué métodos de pago tiene habilitado?
  
        1. T1598.001 - Phishing for Information: Spearphishing Link: Enviar correos electrónicos con enlaces maliciosos para recolectar información sobre los sistemas y usuarios.
 
 * Weaponization
-  - Prepara un Front de la app de Mercado Pago u otro medio de pago.
+
   - Preparo una webapp con la misma interfaz del sistema para controlar las canillas.
   - Preparar Stickers de QR simil menú del local.
  
@@ -37,11 +35,13 @@ El sistema de autoservicio para dispensado de cerveza cuenta con:
 * Delivery
   - Puedo utilizar un QR pegado afuera del bar, mesas o alrededores para engañar a los usuarios. 
   - Puedo usar los QRs del tipo menú para que los usuarios ingresen a mi página clonada.
+  - Puedo hacer que se loguen con el mail, después enviar un correo y de ahí que entren a un link.
      
        1. T1204.001 - User Execution: Malicious Link: Utilizar enlaces maliciosos en QR codes, correos electrónicos de phishing o redes WiFi comprometidas.
        2. T1566.002 - Phishing: Spearphishing Link: Enviar correos electrónicos específicos a los usuarios para que accedan a páginas clonadas.
 
 * Exploit
+* 
   - Logro hacer que los usuarios entren a mi página clonada del control de canillas.
  
        1. T1071.001 - Application Layer Protocol: Web Protocols: Aprovechar los protocolos web para hacer que los usuarios interactúen con las páginas clonadas.
