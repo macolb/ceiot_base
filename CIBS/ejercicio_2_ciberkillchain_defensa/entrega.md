@@ -35,13 +35,11 @@ Desarrollar la defensa en función del ataque planteado en orden inverso. No es 
 
 * Exploit
 
-  - Autenticación Multifactor (MFA)
   - Requerir autenticación multifactor para el acceso a todos los sistemas críticos, incluyendo la webapp y la plataforma de pagos.
   - Implementar autenticación (token/ verificación de dos pasos) al menos para las operaciones sensibles y accesos administrativos.
 
 * Delivery
 
-  - Protección contra Phishing
   - Desplegar soluciones anti-phishing que analicen y bloqueen correos electrónicos maliciosos antes de que lleguen a los usuarios.
   - Utilizar una combinación de servicios de filtrado de correo y entrenamiento de concientización de seguridad para los empleados y usuarios.
   - Enseñar al usuario que solo se puede comprar frente a la canilla o que el QR esté en una pantalla del local.
