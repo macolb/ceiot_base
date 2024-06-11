@@ -19,46 +19,57 @@ El sistema de autoservicio para dispensado de cerveza cuenta con:
 ## Pasos para hacer el ataque
 
 * Reconnaissance
-  - Ver la interfaz de la WebApp para clonarla.
+  - Ingresar a la WebApp para clonar su interfaz y simular su forma de funcionamiento.
   - Ir a los bares para probar el sistema, ver como funciona y cuales son sus pasos para generar una orden.
-  - Qué métodos de pago tiene habilitado?
+  - Investigo que métodos de pago tiene habilitado.
+  - Ingreso a la página del producto y redes sociales para obtener mas información de sus locales, ubicaciones, horarios, etc.
+ 
+       1. T1596.001 - Search Open Websites/Domains: Social Media
 
 * Weaponization
 
-  - Preparo una webapp con la misma interfaz del sistema para controlar las canillas.
-  - Preparar Stickers de QR simil menú del local.
+  - Preparar una webapp con la misma interfaz del sistema para controlar las canillas y generar las órdenes.
+  - Preparar cuentas donde van a llegar las transferencias de los pagos.
+  - Preparar impresiones y stickers de QR simil menú del local para distribuir en los bares que tienen el sistema.
  
-       1. T1059.007 - Command and Scripting Interpreter: JavaScript: Crear scripts maliciosos en JavaScript para utilizar en la webapp clonada.
+       1. T1588.001 - Obtain Capabilities: Malware - Utilizar webapp clonada.
+       2. T1608.003 - Stage Capabilities: Install Digital Certificate
 
 * Delivery
-  - Utilizar un QR pegado afuera del bar, mesas o alrededores para engañar a los usuarios. 
-  - Utilizar los QRs del tipo menú para que los usuarios ingresen a mi página clonada.
+
+  - Los QR van a ser distribuidos dentro y fuera del bar. Pueden ir pegados a las mesas o en los alrededores para engañar a los usuarios. 
      
-       1. T1204.001 - User Execution: Malicious Link: Utilizar enlaces maliciosos en QR codes, correos electrónicos de phishing o redes WiFi comprometidas.
-       2. T1566.002 - Phishing: Spearphishing Link: Enviar correos electrónicos específicos a los usuarios para que accedan a páginas clonadas.
+       1. T1204.001 - User Execution: Malicious Link: Utilizar enlaces maliciosos en códigos QR.
 
 * Exploit
-  
-  - Logro hacer que los usuarios entren a mi página clonada del control de canillas.
+
+  - Utilizar los QRs para que los usuarios ingresen a mi página clonada.
+  - Ya sea la primera vez o no del cliente en el bar, al ser un sistema nuevo se espera que el usuario no se percate de que está entrando a una página diferente a la del sistema de las canillas.
  
        1. T1071.001 - Application Layer Protocol: Web Protocols: Aprovechar los protocolos web para hacer que los usuarios interactúen con las páginas clonadas.
-       2. T1566.003 - Phishing: Spearphishing via Service: Utilizar servicios legítimos para enviar enlaces de phishing.
 
 * Installation
 
-  - Simulo ser la página para ordenar en las canillas y hago que me transfieran el pago a una cuenta diciendo que les doy crédito, ofertas o les activo las canillas.
+  - Logro que los usuarios entren a mi página clonada del control de canillas y pagos.
+  - Simulo generar la orden para las canillas y hago que los usuarios me transfieran el pago a una cuenta.
+  - Simulo ser una oferta o cupón para que los usuarios me transfieran el pago a una cuenta.
+ 
+       1. T1090.003 - Proxy: Multi-hop Proxy: Utilizar proxies múltiples para ocultar la ubicación del atacante.
+       2. T1078.003 - Valid Accounts: Local Accounts.
 
 * Command & Control
 
-  - Logro que el usuario me transfiera a mi cuenta de mercado pago o banco cuando quiere cargar crédito para usar las canillas ante el uso inexperto del usuario.
-      
-       1. T1071.001 - Application Layer Protocol: Web Protocols: Comunicación de comando y control a través de protocolos web para filtrar credenciales.
-       2. T1090.003 - Proxy: Multi-hop Proxy: Utilizar proxies múltiples para ocultar la ubicación del atacante.
+  - Logro que el usuario me transfiera a mi cuenta cuando quiere usar las canillas u obtener crédito para su uso.
+  - Es un ataque rápido donde se espera que las páginas clonadas vayan cambiando de host a medida que sean denunciadas.
+  
+       2. T1071.001 - Application Layer Protocol: Web Protocols
   
 * Actions on Objectives
   
    - Obtengo el dinero en mi cuenta.
+   - Las páginas clonadas van a ir cambiando de host a medida que sean denunciadas.
+   - Las cuentas a donde es transferido el dinero se irán renovando. 
+   - Los QRs pueden ser distribuídos nuevamente en los bares que tengan el sistema o ir rotando para ser más indetectable.
      
-       1. T1071.001 - Application Layer Protocol: Web Protocols: Transferir información de pago robada utilizando protocolos web.
-       2. T1071.003 - Application Layer Protocol: Mail Protocols: Enviar datos de tarjetas y credenciales a través de protocolos de correo.
+       1. T1485 - Data Destruction
 
