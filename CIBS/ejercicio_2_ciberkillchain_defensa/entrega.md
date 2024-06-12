@@ -29,7 +29,7 @@ Desarrollar la defensa en función del ataque planteado en orden inverso. No es 
   - Emplear herramientas de monitoreo de red que inspeccionen el tráfico saliente en busca de patrones de comunicación sospechosos o inusuales.
   - Configurar reglas específicas para detectar conexiones salientes a dominios o IPs no reconocidos o poco confiables.
  
-   1. Network Intrusion Prevention
+    1. Network Intrusion Prevention
 
 * Installation
 
