@@ -70,6 +70,4 @@ El sistema de autoservicio para dispensado de cerveza cuenta con:
    - Las páginas clonadas van a ir cambiando de host a medida que sean denunciadas.
    - Las cuentas a donde es transferido el dinero se irán renovando. 
    - Los QRs pueden ser distribuídos nuevamente en los bares que tengan el sistema o ir rotando para ser más indetectable.
-     
-       1. T1485 - Data Destruction
 
